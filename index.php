@@ -50,8 +50,8 @@
                 </div>
             </div>
             <div class="col-md-6 mx-auto pt-3">
-                <label for="crystal-system" class="form-label">Sistema cristalino: </label>
-                <select id="crystal-system" class="form-select" required>
+                <label for="crystalSystem" class="form-label">Sistema cristalino: </label>
+                <select id="crystalSystem" class="form-control form-control-sm" required>
                     <option value="1"> Cúbico </option>
                     <option value="2"> Tetragonal </option>
                     <option value="3"> Ortorrômbico </option>
@@ -63,8 +63,8 @@
             </div>
             <div class="col-md-6 mx-auto pt-3">
                 <div class="form-group">
-                    <label for="mohs-scale"> Dureza (Escala de Mohs)</label>
-                    <input type="number" id="mohs-scale" class="form-control form-control-sm" placeholder="Ex.: 3.5" required>
+                    <label for="mohsScale"> Dureza (Escala de Mohs)</label>
+                    <input type="number" id="mohsScale" class="form-control form-control-sm" placeholder="Ex.: 3.5" required>
                 </div>
             </div>
             <div class="col-md-6 mx-auto pt-3 text-end">
