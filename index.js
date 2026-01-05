@@ -19,7 +19,7 @@ document.querySelector("#btnValidar").addEventListener("click", function () {
     }
 
     // enviando o valor do input pro arquivo ajax
-    fetch('index_ajax.php', {
+    fetch('criarGemas_ajax.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

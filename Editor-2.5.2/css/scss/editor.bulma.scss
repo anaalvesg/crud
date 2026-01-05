@@ -1,0 +1,156 @@
+@use "sass:meta";
+@use 'mixins.scss';
+
+:root {
+	--dte-dropdown-width: 100%;
+	--dte-dropdown-zindex: 41;
+	--dte-dropdown-background: var(--bulma-scheme-main);
+	--dte-dropdown-background-hover: rgba(0, 0, 0, 0.1);
+	--dte-dropdown-border: 1px solid var(--bulma-border);
+	--dte-dropdown-border-radius: var(--bulma-radius);
+	--dte-dropdown-font-size: 1em;
+	--dte-dropdown-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+	--dte-dropdown-input-border: 1px solid var(--bulma-border);
+	--dte-dropdown-input-border-radius: var(--bulma-radius);
+	--dte-dropdown-input-padding: var(--bulma-control-padding-vertical)
+		var(--bulma-control-padding-horizontal);
+	--dte-dropdown-max-height: 300px;
+
+	--dte-tag-background: var(--bulma-scheme-main);
+	--dte-tag-background-hover: rgba(0, 0, 0, 0.1);
+	--dte-tag-border: 1px solid var(--bulma-border);
+	--dte-tag-border-radius: var(--bulma-radius);
+	--dte-tag-color: inherit;
+	--dte-tag-font-size: 1em;
+	--dte-tag-margin: 0.5em;
+	--dte-tag-label-line-height: normal;
+	--dte-tag-label-padding: var(--bulma-control-padding-vertical)
+		var(--bulma-control-padding-horizontal);
+}
+
+
+// Inline editing
+@include meta.load-css('inline.scss');
+
+// Bubble form editing
+@include meta.load-css('bubble.scss');
+
+@include meta.load-css('upload.scss');
+
+@include meta.load-css('processing.scss');
+@include meta.load-css('datatable.scss');
+
+div.DTE.modal-card {
+	div.DTE_Header {
+		div.DTE_Processing_Indicator {
+			top: 35px;
+			right: 53px;
+		}
+	}
+
+	div.dataTables_info,
+	div.dt-info {
+		font-weight: 1;
+		font-size: 0.8em;
+		padding-left: 2px;
+
+		span.select-item {
+			padding-left: 0.5em;
+		}
+	}
+}
+
+div.DTE_Form_Buttons {
+	display: flex;
+	justify-content: flex-end;
+
+	button {
+		margin-left: 0.5em;
+	}
+}
+
+table.dataTable {
+	div.field {
+		margin-bottom: 0px;
+
+		input.input {
+			padding: 0px;
+		}
+		input.is-small {
+			font-size: 1em;
+			height: 2em;
+		}
+	}
+}
+
+div.DTE_Field,
+div.DTE_Field_InputControl {
+	position: relative;
+}
+
+div.DTE_Field_Type_checkbox,
+div.DTE_Field_Type_radio {
+	div {
+		label {
+			margin-left: 0.75em;
+		}
+	}
+}
+
+div.DTE_Field_Type_datatable {
+	div.dt-search {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		font-size: 0.8em;
+	}
+
+	div.dt-info,
+	div.dataTables_info {
+		margin-top: 0.5em;
+		text-align: left;
+		font-size: 0.8em;
+		line-height: 1.3em;
+		padding-right: 1em;
+		font-weight: normal;
+
+		span.select-info {
+			display: block;
+		}
+	}
+
+	div.dt-buttons {
+		width: 100%;
+
+		&:empty {
+			display: none;
+		}
+	}
+
+	div.column:empty {
+		display: none;
+	}
+}
+
+div.DTE_Bubble {
+	div.DTE_Bubble_Liner {
+		div.DTE_Header {
+			font-size: 18px;
+		}
+	}
+}
+
+@include meta.load-css('dropdown.scss');
+
+div.dte-dropdown div.dt-container {
+	> div.columns > div {
+		padding: 0;
+
+		table {
+			margin-top: 0 !important;
+
+			tbody > tr:last-child > * {
+				border-bottom-width: 0;
+			}
+		}
+	}
+}
