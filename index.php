@@ -17,6 +17,7 @@
             width: 100%;
             background-image: url("midias/background.png");
             background-repeat: no-repeat;
+            background-size: cover;
         }
 
         label {
@@ -67,7 +68,8 @@
                     <input type="number" id="mohsScale" class="form-control form-control-sm" placeholder="Ex.: 3.5" required>
                 </div>
             </div>
-            <div class="col-md-6 mx-auto pt-3 text-end">
+            <div class="col-md-6 mx-auto pt-3 d-flex justify-content-between">
+                <a href="listarGemas.php" class="btn btn-outline-dark btn-sm meu-botao"> Visualizar gemas </a>
                 <button id="btnValidar" class="btn btn-dark btn-sm meu-botao"> Registrar gema </button>
             </div>
         </div>

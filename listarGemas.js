@@ -1,5 +1,5 @@
 let editor = new DataTable.Editor({
-    ajax: 'buscarGemas_ajax.php',
+    ajax: 'editar_deletar_gemas_ajax.php',
     table: '#gemList',
     fields: [
         { label: 'Nome', name: 'nome' },
