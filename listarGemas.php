@@ -10,7 +10,7 @@
 </head>
 <body>
     <table id="gemList"></table>
-    <button class="btn btn-outline-dark"><i class="bi bi-arrow-left"></i> Voltar </button>
+    <a href="index.php" class="btn btn-outline-dark"> Voltar </a>
 </body>
 
 <script src="https://cdn.datatables.net/v/dt/jqc-1.12.4/dt-2.3.6/b-3.2.6/sl-3.1.3/datatables.min.js"></script>
