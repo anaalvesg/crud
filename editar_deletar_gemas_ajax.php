@@ -39,3 +39,5 @@ foreach($_POST['data'] as $id => $campos) {
         ]);
     };
 };
+
+echo json_encode(["data" => ""]);
