@@ -8,7 +8,7 @@ $action = $_POST['action'];
 foreach($_POST['data'] as $id => $campos) {
         $nome = $campos['nome'];
         $categoria = $campos['categoria'];
-        $idSistema = isset($campos['idSistema']) ? $campos[':idSistema'] : null;
+        $idSistema = isset($campos['idSistema']) ? $campos['idSistema'] : null;
         $dureza = $campos['dureza'];
 
     if ($action === 'edit') {
